@@ -1,0 +1,32 @@
+<!-- Add the Freshchat widget script to your website -->
+
+<script src="https://wchat.freshchat.com/js/widget.js"></script>
+
+<!-- Add a button or link to open the chat widget -->
+
+<button id="fc_launcher">Open Chat</button>
+
+<script>
+
+  // Initialize the Freshchat widget with your app ID and app key
+
+  window.fcWidget.init({
+
+    token: "YOUR_APP_TOKEN",
+
+    host: "https://wchat.freshchat.com",
+
+    siteId: "YOUR_SITE_ID"
+
+  });
+
+  // Open the chat widget when the button or link is clicked
+
+  document.getElementById("fc_launcher").addEventListener("click", function() {
+
+    window.fcWidget.open();
+
+  });
+
+</script>
+
